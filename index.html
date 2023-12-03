@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+        <!-- FontAweone CDN Link for Icons -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <!-- scrollreveal  -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+        <!-- Start Quiz Button  -->
+    <div class="Start_btn">
+      <button id="start-button">Start Quiz</button>
+    </div>
+
+    <div class="info_box" id="info_box">
+      <div class="info_title">
+        <span></i>Some Rules of this Quiz <i class="fa-solid fa-puzzle-piece" style="color: #e06b80;"></i></span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. Respond within <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once an answer is chosen, it's final—no changes allowed.
+        </div>
+        <div class="info">
+          3. Options can't be selected after the time runs out.
+        </div>
+        <div class="info">
+          4. You cant's exit from the Quiz while you're playing.
+        </div>
+        <div class="info">
+          5. You'll get point on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="exit_quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+     <!-- Quiz Box -->
+     <div class="quiz_box">
+        <header>
+          <div class="total_que">
+            <!-- Here I've inserted Question Count Number form JavaScript -->
+          </div>
+          <div class="timer">
+            <div class="time_left_txt">Time Left</div>
+            <div class="timer_sec">15 <span>sec</span></div>
+          </div>
+          <div class="time_line"></div>
+        </header>
+  
+        <section>
+          <div class="que_text">
+          <!-- Here I've inserted questions form JavaScript -->
+          </div>
+          <div class="option_list">
+              <!-- Here I've inserted option form JavaScript -->
+          </div>
+        </section>
+  
+        <!-- Qize Box Footer -->
+        <footer>
+          <div class="total_que">
+            <!-- Here I've inserted Question Count Number form JavaScript -->
+          </div>
+          <button class="next_btn">Next Que</button>
+        </footer>
+      </div>
+  
+      <!-- Result Box -->
+      <div class="result_box">
+        <div class="icon">
+          <img class="slide-fwd-center" src="./images/crown.png" alt="" width="150px">
+          <!-- <i class="fas fa-crown"></i> -->
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+          <!-- Here I've inserted Score Result form JavaScript-->
+        </div>
+        <div class="buttons">
+          <button class="restart">Replay Quiz</button>
+          <button class="quit">Quit Quiz</button>
+        </div>
+      </div>
+
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>
